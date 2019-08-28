@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.ViewParentDetails">
+   <children>
+      <Pane layoutX="161.0" layoutY="162.0" prefHeight="467.0" prefWidth="701.0" style="-fx-background-color: #FAFAFA;" AnchorPane.bottomAnchor="162.0" AnchorPane.leftAnchor="161.0" AnchorPane.rightAnchor="161.0" AnchorPane.topAnchor="162.0">
+         <children>
+            <Text fill="#0700da" layoutX="42.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parent Details" />
+            <Line endX="515.0" layoutX="170.0" layoutY="194.0" startX="-148.0" />
+            <ImageView fitHeight="150.0" fitWidth="157.0" layoutX="522.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/Student/BlankProfPic.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="42.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+            <Text layoutX="42.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parent ID:" />
+            <Text layoutX="42.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" />
+            <Text layoutX="40.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel No:" />
+            <JFXButton layoutX="578.0" layoutY="348.0" style="-fx-background-color: #075E54;" text="Edit Details" textFill="WHITE" />
+            <Label layoutX="123.0" layoutY="214.0" prefHeight="17.0" prefWidth="216.0" style="-fx-background-color: white;" />
+            <Label layoutX="123.0" layoutY="240.0" prefHeight="17.0" prefWidth="127.0" style="-fx-background-color: white;" />
+            <Label layoutX="123.0" layoutY="266.0" prefHeight="17.0" prefWidth="332.0" style="-fx-background-color: white;" />
+            <Label layoutX="123.0" layoutY="294.0" prefHeight="17.0" prefWidth="127.0" style="-fx-background-color: white;" />
+            <Label layoutX="371.0" layoutY="26.0" prefHeight="150.0" prefWidth="143.0" style="-fx-background-color: white;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

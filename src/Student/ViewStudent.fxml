@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXBadge?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.ViewStudent">
+   <children>
+      <Pane layoutX="162.0" layoutY="90.0" prefHeight="600.0" prefWidth="701.0" style="-fx-background-color: #FAFAFA;" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="162.0" AnchorPane.rightAnchor="162.0" AnchorPane.topAnchor="89.0">
+         <children>
+            <ImageView fx:id="studentProfPic" fitHeight="141.0" fitWidth="140.0" layoutX="267.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/Student/BlankProfPic.png" />
+               </image>
+            </ImageView>
+            <JFXBadge fx:id="stdNameLabel" layoutX="123.0" layoutY="220.0" prefHeight="17.0" prefWidth="215.0" style="-fx-background-color: white;" />
+            <Text layoutX="36.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+            <Text layoutX="36.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Born On:" />
+            <Text layoutX="405.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:" />
+            <Text layoutX="35.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Std ID:" />
+            <Text layoutX="406.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="School:" />
+            <Text layoutX="405.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC No:" />
+            <Text layoutX="38.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+            <Text layoutX="405.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel No:" />
+            <Line endX="554.0" layoutX="135.0" layoutY="189.0" startX="-116.0" />
+            <JFXBadge fx:id="stdIdLabel" layoutX="123.0" layoutY="246.0" prefHeight="17.0" prefWidth="215.0" style="-fx-background-color: white;" />
+            <JFXBadge fx:id="stdDOBLabel" layoutX="123.0" layoutY="273.0" prefHeight="17.0" prefWidth="165.0" style="-fx-background-color: white;" />
+            <JFXBadge fx:id="stdEmailLabel" layoutX="124.0" layoutY="300.0" prefHeight="17.0" prefWidth="215.0" style="-fx-background-color: white;" />
+            <JFXBadge fx:id="StdGenderLabel" layoutX="469.0" layoutY="220.0" prefHeight="17.0" prefWidth="67.0" style="-fx-background-color: white;" />
+            <JFXBadge fx:id="stdSchoolLabel" layoutX="469.0" layoutY="246.0" prefHeight="17.0" prefWidth="215.0" style="-fx-background-color: white;" />
+            <JFXBadge fx:id="StdNICLabel" layoutX="469.0" layoutY="273.0" prefHeight="17.0" prefWidth="153.0" style="-fx-background-color: white;" />
+            <JFXBadge fx:id="stdTelLabel" layoutX="469.0" layoutY="300.0" prefHeight="17.0" prefWidth="153.0" style="-fx-background-color: white;" />
+            <Line endX="564.0" endY="27.0" layoutX="125.0" layoutY="351.0" startX="-98.0" startY="27.0" />
+            <JFXButton fx:id="viewParentInfoButton" layoutX="469.0" layoutY="341.0" style="-fx-background-color: #128C7E;" text="View Parent Info" textFill="WHITE" />
+            <JFXButton fx:id="stdEditDetailsButton" layoutX="584.0" layoutY="341.0" style="-fx-background-color: #075E54;" text="Edit Details" textFill="WHITE" />
+            <HBox layoutX="27.0" layoutY="402.0" prefHeight="159.0" prefWidth="663.0">
+               <children>
+                  <BarChart prefHeight="150.0" prefWidth="197.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                     <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                  </BarChart>
+                  <ListView prefHeight="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets bottom="23.0" left="8.0" right="2.0" top="12.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                  </ListView>
+                  <ListView prefHeight="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets bottom="23.0" left="14.0" right="2.0" top="12.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                  </ListView>
+               </children>
+            </HBox>
+            <Text fill="#3700ff" layoutX="50.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendences" />
+            <Text fill="#3700ff" layoutX="291.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Recent Behaviors" />
+            <Text fill="#3700ff" layoutX="526.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recent Payments" />
+            <JFXButton layoutX="102.0" layoutY="557.0" style="-fx-background-color: #075E54;" text="View Details" textFill="WHITE" />
+            <JFXButton layoutX="297.0" layoutY="557.0" style="-fx-background-color: #075E54;" text="View Details" textFill="WHITE" />
+            <JFXButton layoutX="507.0" layoutY="558.0" style="-fx-background-color: #075E54;" text="View Details" textFill="WHITE" />
+            <Label layoutX="506.0" layoutY="103.0" text="Label" />
+         </children>
+      </Pane>
+      <Text fill="#3310dd" layoutX="429.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-font-size: 20px;" text="Student Profile" wrappingWidth="165.486328125" />
+      <VBox layoutX="7.0" layoutY="92.0" prefHeight="600.0" prefWidth="140.0" style="-fx-background-color: #03254C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="884.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fitHeight="141.0" fitWidth="147.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/Student/Mac.gif" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+            <JFXButton prefHeight="50.0" prefWidth="141.0" text="Dashboard" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Student/dashboardIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton prefHeight="50.0" prefWidth="141.0" text="Student" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Student/studentIcon.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton prefHeight="50.0" prefWidth="141.0" text="Staff" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Student/staffIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton prefHeight="50.0" prefWidth="141.0" text="Course" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Student/staffIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton prefHeight="50.0" prefWidth="141.0" text="Finance" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Student/staffIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton prefHeight="50.0" prefWidth="141.0" text="Accounting" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Student/staffIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <HBox layoutX="213.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #1DA1F2;" AnchorPane.bottomAnchor="718.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>
