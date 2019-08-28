@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="544.0" prefWidth="743.0" style="-fx-background-color: #00214D;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Income.SelectionWindow">
+   <children>
+      <BorderPane id="LeftBoderPane" layoutY="44.0" prefHeight="500.0" prefWidth="743.0" style="-fx-background-color: #E6F1FF;">
+         <center>
+            <Pane id="BodyPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton buttonType="RAISED" layoutX="158.0" layoutY="102.0" prefHeight="55.0" prefWidth="280.0" ripplerFill="BLACK" style="-fx-background-color: #66A8FF;" text="Pay Student Fees" />
+                  <JFXButton buttonType="RAISED" layoutX="158.0" layoutY="202.0" prefHeight="55.0" prefWidth="280.0" style="-fx-background-color: #66A8FF;" text="Delete / Edit Payments" />
+                  <JFXButton buttonType="RAISED" layoutX="157.0" layoutY="302.0" prefHeight="55.0" prefWidth="280.0" style="-fx-background-color: #66A8FF;" text="Generate  Monthly Report" />
+               </children>
+            </Pane>
+         </center>
+         <left>
+            <Pane prefHeight="506.0" prefWidth="154.0" style="-fx-background-color: #000066;" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton layoutX="30.0" layoutY="90.0" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="50.0" layoutY="160.0" text="Student" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="50.0" layoutY="220.0" text="Staff" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="50.0" layoutY="280.0" text="Course" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="50.0" layoutY="340.0" text="Finance" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="30.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Dashboard/studentW.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="20.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Dashboard/Dashboard.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="25.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Dashboard/EmployeeW.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="26.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Dashboard/courses.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="29.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Dashboard/courses.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink layoutX="54.0" layoutY="466.0" text="Logout" textFill="WHITE" underline="true" />
+                  <ImageView fitHeight="90.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Resources/Student/logow.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </left></BorderPane>
+   </children>
+</AnchorPane>

@@ -97,27 +97,32 @@
                         </JFXButton>
                         <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="30.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@studentW.png" />
+                              <Image url="@../../Resources/Dashboard/studentW.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="20.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@Dashboard.png" />
+                              <Image url="@../../Resources/Dashboard/Dashboard.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="25.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@EmployeeW.png" />
+                              <Image url="@../../Resources/Dashboard/EmployeeW.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="29.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@Finance.png" />
+                              <Image url="@../../Resources/Dashboard/Finance.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="29.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@courses.png" />
+                              <Image url="@../../Resources/Dashboard/courses.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="90.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Resources/Student/logow.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -134,12 +139,12 @@
                   <JFXButton layoutX="225.0" layoutY="328.0" text="Forgot Your Password" underline="true" />
                   <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="185.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@profile-icon-png-902.png" />
+                        <Image url="@../../Resources/UserManagement/profile-icon-png-902.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="188.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@55961.png" />
+                        <Image url="@../../Resources/UserManagement/Lock.png" />
                      </image>
                   </ImageView>
                   <Label layoutX="202.0" layoutY="61.0" text="WELCOME">
