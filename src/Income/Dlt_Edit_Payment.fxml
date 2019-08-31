@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
@@ -14,17 +15,17 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="544.0" prefWidth="750.0" style="-fx-background-color: #00214D;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Income.SelectionWindow">
+<AnchorPane prefHeight="544.0" prefWidth="743.0" style="-fx-background-color: #00214D;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Income.SelectionWindow">
    <children>
       <BorderPane id="LeftBoderPane" layoutY="44.0" prefHeight="500.0" prefWidth="743.0" style="-fx-background-color: #E6F1FF;">
          <center>
             <Pane id="BodyPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E6F1FF;" BorderPane.alignment="CENTER">
                <children>
-                  <SplitPane dividerPositions="0.11368421052631579" orientation="VERTICAL" prefHeight="500.0" prefWidth="596.0" style="-fx-background-color: #E6F1FF;">
+                  <SplitPane dividerPositions="0.11368421052631579" orientation="VERTICAL" prefHeight="500.0" prefWidth="588.0" style="-fx-background-color: #E6F1FF;">
                      <items>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="177.0" prefWidth="591.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="177.0" prefWidth="588.0">
                            <children>
-                              <Pane prefHeight="51.0" prefWidth="591.0">
+                              <Pane prefHeight="51.0" prefWidth="588.0">
                                  <children>
                                     <Label layoutX="10.0" layoutY="10.0" prefWidth="119.0" text="Student ID">
                                        <font>
@@ -37,16 +38,16 @@
                               </Pane>
                            </children>
                         </AnchorPane>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="152.0" prefWidth="591.0" style="-fx-background-color: #E6F1FF;">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="152.0" prefWidth="588.0" style="-fx-background-color: #E6F1FF;">
                            <children>
-                              <TableView prefHeight="413.0" prefWidth="593.0" style="-fx-background-color: #fcf2bb;">
-                                <columns>
-                                  <TableColumn id="FeeTable_date" prefWidth="95.0" text="Date" />
-                                  <TableColumn id="FeeTable_time" prefWidth="95.0" text="Time" />
+                              <TableView prefHeight="413.0" prefWidth="588.0" style="-fx-background-color: #fcf2bb;">
+                                 <columns>
+                                    <TableColumn id="FeeTable_date" prefWidth="95.0" text="Date" />
+                                    <TableColumn id="FeeTable_time" prefWidth="95.0" text="Time" />
                                     <TableColumn id="FeeTable_courses" prefWidth="300.0" text="Courses" />
                                     <TableColumn id="FeeTable_edit" prefWidth="50.0" text="Edit" />
                                     <TableColumn id="FeeTable_delete" prefWidth="50.0" text="Delete" />
-                                </columns>
+                                 </columns>
                               </TableView>
                            </children>
                         </AnchorPane>
@@ -119,4 +120,7 @@
          </left>
       </BorderPane>
    </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
 </AnchorPane>

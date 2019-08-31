@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -13,7 +14,7 @@
    <children>
       <BorderPane id="LeftBoderPane" layoutY="44.0" prefHeight="500.0" prefWidth="743.0" style="-fx-background-color: #E6F1FF;">
          <center>
-            <Pane id="BodyPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            <Pane id="BodyPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E6F1FF;" BorderPane.alignment="CENTER" />
          </center>
          <left>
             <Pane prefHeight="506.0" prefWidth="154.0" style="-fx-background-color: #000066;" BorderPane.alignment="CENTER">
@@ -79,4 +80,7 @@
          </left>
       </BorderPane>
    </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
 </AnchorPane>

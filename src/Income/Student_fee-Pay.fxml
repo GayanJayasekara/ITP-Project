@@ -5,6 +5,7 @@
 <?import com.jfoenix.controls.JFXCheckBox?>
 <?import com.jfoenix.controls.JFXDatePicker?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuItem?>
@@ -20,11 +21,11 @@
    <children>
       <BorderPane id="LeftBoderPane" layoutY="44.0" prefHeight="500.0" prefWidth="743.0" style="-fx-background-color: #E6F1FF;">
          <center>
-            <Pane id="BodyPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <Pane id="BodyPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E6F1FF;" BorderPane.alignment="CENTER">
                <children>
                   <SplitPane dividerPositions="0.1144578313253012, 0.7008032128514057" orientation="VERTICAL" prefHeight="500.0" prefWidth="589.0" style="-fx-background-color: #E6F1FF;">
-                    <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="177.0" prefWidth="591.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="177.0" prefWidth="591.0">
                            <children>
                               <Pane prefHeight="51.0" prefWidth="591.0">
                                  <children>
@@ -39,11 +40,11 @@
                               </Pane>
                            </children>
                         </AnchorPane>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="152.0" prefWidth="591.0">
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="152.0" prefWidth="591.0">
                            <children>
                               <SplitPane dividerPositions="0.5297113752122241" prefHeight="287.0" prefWidth="591.0">
-                                <items>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <items>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                                        <children>
                                           <Label layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="75.0" text="Stream">
                                              <font>
@@ -51,13 +52,13 @@
                                              </font>
                                           </Label>
                                           <DropdownButton layoutX="85.0" layoutY="12.0" maxWidth="90.0">
-                                              <items>
-                                                  <MenuItem text="Maths Science" />
-                                                  <MenuItem text="Bio Science" />
-                                                  <MenuItem text="Commerce" />
+                                             <items>
+                                                <MenuItem text="Maths Science" />
+                                                <MenuItem text="Bio Science" />
+                                                <MenuItem text="Commerce" />
                                                 <MenuItem text="Technology" />
                                                 <MenuItem text="Art" />
-                                              </items>
+                                             </items>
                                           </DropdownButton>
                                           <Label layoutX="10.0" layoutY="50.0" prefHeight="20.0" prefWidth="75.0" text="Courses">
                                              <font>
@@ -83,8 +84,9 @@
                                                 </JFXCheckBox>
                                              </children>
                                           </Pane>
-                                       </children></AnchorPane>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="209.0" prefWidth="249.0">
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="209.0" prefWidth="249.0">
                                        <children>
                                           <Label layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="50.0" text="Date">
                                              <font>
@@ -92,8 +94,9 @@
                                              </font>
                                           </Label>
                                           <JFXDatePicker layoutX="52.0" layoutY="6.0" prefWidth="210.0" />
-                                       </children></AnchorPane>
-                                </items>
+                                       </children>
+                                    </AnchorPane>
+                                 </items>
                               </SplitPane>
                            </children>
                         </AnchorPane>
@@ -120,10 +123,11 @@
                                     </Label>
                                     <JFXTextField layoutX="105.0" layoutY="80.0" minHeight="-Infinity" prefHeight="20.0" prefWidth="195.0" text="%key.unspecified" />
                                     <JFXButton buttonType="RAISED" layoutX="425.0" layoutY="55.0" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #66A8FF;" text="PAY" />
-                                 </children></Pane>
+                                 </children>
+                              </Pane>
                            </children>
                         </AnchorPane>
-                    </items>
+                     </items>
                   </SplitPane>
                </children>
             </Pane>
@@ -192,4 +196,7 @@
          </left>
       </BorderPane>
    </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
 </AnchorPane>
